@@ -18,6 +18,19 @@ const HomeScreen = () => {
             />
           </View>
       </View>
+      <ScrollView bounces = {false}>
+        <View style = {styles.home}>
+          <Text style = {styles.text1}>Votre transport détente !</Text>
+          <View style = {styles.view1}>
+          <View style = {styles.view8}>
+              <Text style = {styles.text2}>Lisez un livre. Admirez la vue et profitez !</Text>
+              <View style = {styles.button1}>
+                <Text style = {styles.button1Text}>C'est parti !</Text>
+              </View>
+          </View>
+          </View>
+        </View>
+      </ScrollView>
         <StatusBar style = "light" backgroundColor='#2058c0' translucent = {true}></StatusBar>
     </View>
   )
@@ -36,7 +49,7 @@ const styles = StyleSheet.create({
       
       header:{
         backgroundColor: colors.blue,
-        paddingTop: parameters.statusBarHeight,
+       // paddingTop: parameters.statusBarHeight,
         height: parameters.headerHeight,
         alignItems: "flex-start"
       },
