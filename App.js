@@ -1,9 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Dimensions } from 'react-native'
 import React from 'react'
+import {colors, parameters} from './src/global/styles'
 
+const SCREEN_WIDTH = Dimensions.get('window').width
 const App = () => {
   return (
-    <View>
+    <View style = {styles.container}>
       <Text>Hello VTClone !!</Text>
     </View>
   )
@@ -80,17 +82,17 @@ button1Text:{
 card:{
 
   alignItems: "center",
-  margin: SCREEN_WIDTH/22
+  margin: SCREEN_WIDTH/22,
 },
 
 view2:{
   marginBottom: 5,
   borderRadius: 15,
-  backgroundColor: color.grey6
+  backgroundColor: colors.grey6
 },
 
 title:{
-  color: colors.black,
+  color:  "black",
   fontSize: 16,
 },
 
