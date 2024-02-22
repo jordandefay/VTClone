@@ -35,25 +35,26 @@ const HomeScreen = () => {
               />
            </View>
           </View>
-          <View>
-            <FlatList
-              numRows = {4}
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              data = {filterData}
-              keyExtractor={(item) => item.id}
-              renderItem={({item})=>(
+
+          </View>
+            <View>
+              <FlatList
+                numRows = {4}
+                horizontal={true}
+                showsHorizontalScrollIndicator={false}
+                data = {filterData}
+                keyExtractor={(item) => item.id}
+                renderItem={({item})=>(
                   <View style = {styles.card}>
                     <View style = {styles.view2}>
                       <Image style = {styles.image2} source = {item.image} />
                     </View>
-                    <View>
-                    <Text style = {styles.title}>{item.name}</Text>
+                      <View>
+                        <Text style = {styles.title}>{item.name}</Text>
                     </View>
                   </View>
               )}
              />
-          </View>
         </View>
       </ScrollView>
         <StatusBar style = "light" backgroundColor='#2058c0' translucent = {true}></StatusBar>
