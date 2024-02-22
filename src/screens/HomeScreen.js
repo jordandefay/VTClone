@@ -25,7 +25,7 @@ const HomeScreen = () => {
           <View style = {styles.view8}>
               <Text style = {styles.text2}>Lisez un livre. Admirez la vue et profitez !</Text>
               <View style = {styles.button1}>
-                <Text style = {styles.button1Text}>C'est parti !</Text>
+              <Text style = {styles.button1Text}>C'est parti !</Text>
               </View>
            </View>
            <View>
@@ -57,7 +57,7 @@ const HomeScreen = () => {
              />
         </View>
         <View style = {styles.view3}>
-            <Text>On va où ?</Text>
+            <Text style = {styles.text3}>Où allons-nous ?</Text>
             <View style = {styles.view4}>
                   <Icon type = "material-community"
                     name = "clock-time-four"
@@ -71,6 +71,50 @@ const HomeScreen = () => {
                   size = {26}
                   />
             </View>
+        </View>
+        <View style = {styles.view5}>
+                  <View style = {styles.view6}>
+                    <View style = {styles.view7}>
+                      <Icon type = "material-community"
+                            name = "map-marker"
+                            color = {colors.black}
+                            size = {22}
+                            />
+                    </View>
+                    <View>
+                    <Text style = {{fontSize: 18, color: colors.black}}>Avenue Meknes</Text>
+                    <Text style = {{color: colors.grey3}}>Avenue Abdelhak Torres</Text>
+                    </View>
+                  </View>
+                  <View>
+                  <Icon type = "material-community"
+                            name = "chevron-right"
+                            color = {colors.grey}
+                            size = {26}
+                            />
+                  </View>
+        </View>
+        <View style = {styles.view5}>
+                  <View style = {styles.view6}>
+                    <View style = {styles.view7}>
+                      <Icon type = "material-community"
+                            name = "map-marker"
+                            color = {colors.black}
+                            size = {22}
+                            />
+                    </View>
+                    <View>
+                    <Text style = {{fontSize: 18, color: colors.black}}>Quartier Firdaouss, Ain Aouda</Text>
+                    <Text style = {{color: colors.grey3}}>Oued Imny, Tétouan</Text>
+                    </View>
+                  </View>
+                  <View>
+                  <Icon type = "material-community"
+                            name = "chevron-right"
+                            color = {colors.grey}
+                            size = {26}
+                            />
+                  </View>
         </View>
       </ScrollView>
         <StatusBar style = "light" backgroundColor='#2058c0' translucent = {true}></StatusBar>
