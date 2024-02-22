@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, Dimensions, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Dimensions, ScrollView, Image, FlatList } from 'react-native'
 import React from 'react'
 import {Icon} from 'react-native-elements'
 import {colors, parameters} from '../global/styles'
 import { StatusBar } from 'expo-status-bar'
-
+import { filterData } from '../global/data'
 const SCREEN_WIDTH = Dimensions.get('window').width
 
 const HomeScreen = () => {
@@ -27,7 +27,32 @@ const HomeScreen = () => {
               <View style = {styles.button1}>
                 <Text style = {styles.button1Text}>C'est parti !</Text>
               </View>
+           </View>
+           <View>
+              <Image
+                style = {styles.image1}
+                source = {require('../../assets/uberCar.png')}
+              />
+           </View>
           </View>
+          <View>
+            <FlatList
+              numRows = {4}
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              data = {filterData}
+              keyExtractor={(item) => item.id}
+              renderItem={({item})=>(
+                  <View style = {styles.card}>
+                    <View style = {styles.view2}>
+                      <Image style = {styles.image2} source = {item.image} />
+                    </View>
+                    <View>
+                    <Text style = {styles.title}>{item.name}</Text>
+                    </View>
+                  </View>
+              )}
+             />
           </View>
         </View>
       </ScrollView>
