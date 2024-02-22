@@ -56,6 +56,16 @@ const HomeScreen = () => {
               )}
              />
         </View>
+        <View style = {styles.view3}>
+            <Text>On va où ?</Text>
+            <View style = {styles.view4}>
+                <Icon type = "material-community"
+                name = "menu"
+                color = {colors.white}
+                size = {40}
+                />
+            </View>
+        </View>
       </ScrollView>
         <StatusBar style = "light" backgroundColor='#2058c0' translucent = {true}></StatusBar>
     </View>
