@@ -59,11 +59,17 @@ const HomeScreen = () => {
         <View style = {styles.view3}>
             <Text>On va où ?</Text>
             <View style = {styles.view4}>
-                <Icon type = "material-community"
-                name = "menu"
-                color = {colors.white}
-                size = {40}
-                />
+                  <Icon type = "material-community"
+                    name = "clock-time-four"
+                    color = {colors.grey1}
+                    size = {26}
+                  />
+                  <Text style = {{marginLeft: 5}}>Now</Text>
+                  <Icon type = "material-community"
+                  name = "chevron-down"
+                  color = {colors.grey1}
+                  size = {26}
+                  />
             </View>
         </View>
       </ScrollView>
